@@ -16,7 +16,10 @@
 - Implemented Sign out
 - Updated Profile api call
 - Fetch movies from TMDB api
-
+- BugFix : Sign Up user display name and profile picture update
+- BugFIx: if the user is not liged in redirect user to login page vice-versa
+- Unsubscribed to the on auth state change callback
+- Add hardcoded values to constant file
 # Features
 - Login / signup
     - Signin / signup Form
