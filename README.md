@@ -1,4 +1,4 @@
-#Netflix Gpt
+# Netflix Gpt
 
 - Create React app
 - Tailwind css
@@ -11,7 +11,10 @@
 - Firebase setup
 - Deploying app to production
 - Create signup useraccount
-#Features
+- Implement sign in user api
+- created redux store with userSlice
+
+# Features
 - Login / signup
     - Signin / signup Form
     - Redirect to Browse page
