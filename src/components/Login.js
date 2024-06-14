@@ -1,23 +1,61 @@
 import React, { useRef, useState } from "react";
 import Header from "./Header";
 import { checkValidData } from "../utils/validate";
+import { auth } from "../utils/firebase";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
 
 const Login = () => {
   const [isSignIn, setIsSignIn] = useState(true);
   const [errMessage, setErrMessage] = useState(null);
   const email = useRef(null);
   const password = useRef(null);
-  const name = useRef(null);
   const toggleSignInForm = () => {
     setIsSignIn(!isSignIn);
   };
   const handleBtnClick = () => {
     const errorMessage = checkValidData(
       email.current.value,
-      password.current.value,
-      name.current.value
+      password.current.value
     );
     setErrMessage(errorMessage);
+    if (errMessage) return;
+    // Create new user sign in / sign up
+    if (!isSignIn) {
+      // Sign up logic
+      createUserWithEmailAndPassword(
+        auth,
+        email.current.value,
+        password.current.value
+      )
+        .then((userCredential) => {
+          const user = userCredential.user;
+          console.log(user);
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          setErrMessage(errorCode + " - " + errorMessage);
+        });
+    } else {
+      // Sign in logic
+      signInWithEmailAndPassword(
+        auth,
+        email.current.value,
+        password.current.value
+      )
+        .then((userCredential) => {
+          const user = userCredential.user;
+          console.log(user);
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          setErrMessage(errorCode + " - " + errorMessage);
+        });
+    }
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -41,7 +79,6 @@ const Login = () => {
         </h1>
         {!isSignIn && (
           <input
-            ref={name}
             type="text"
             placeholder="Full Name"
             className="p-4 my-4 w-full bg-black rounded-md bg-opacity-40 border border-gray-500"
