@@ -11,8 +11,7 @@ export const API_CONSTANT = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjMWEwMzVjZGQ5MTMxMjY2YjYxMDY3MWI0MWRkZGJiNSIsInN1YiI6IjYxNWU4YjExYjNmNmY1MDAyYjhjNzIzNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.rXAAlwzP0yNdFUP4o2wKsl3zSw8mh8dF7Y4EgLY1g1o",
+    Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
@@ -32,3 +31,5 @@ export const SUPPORETED_LANGUAGES = [
     name: "Spanish",
   },
 ];
+
+export const GIMINI_AI_KEY = process.env.REACT_APP_GIMINI_AI_KEY;

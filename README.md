@@ -37,7 +37,8 @@
 - GPT search feature
 - Gpt search bar
 - Added multilingual support
-- Gpt Apis support(get open ai Key)
+- Gpt Apis support(get gemini ai Key)
+
 # Features
 
 - Login / signup
