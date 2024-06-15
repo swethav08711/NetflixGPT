@@ -10,19 +10,21 @@ const SecondaryContainer = () => {
   const topRatedMovies = useSelector((store) => store?.movies?.topRatedMovies);
   const upcomingMovies = useSelector((store) => store?.movies?.upcomingMovies);
   return (
-    <div className=" text-white -mt-[18rem] relative z-20">
-      <MovieList title={"Now Playing"} movies={nowPlayingMovies} />
-      <MovieList title={"Popular"} movies={popularMovies} />
-      <MovieList title={"Top Rated Movies"} movies={topRatedMovies} />
-      <MovieList title={"Upcoming Movies"} movies={upcomingMovies} />
-      <MovieList title={"Now Playing"} movies={nowPlayingMovies} />
-      <MovieList title={"Popular"} movies={popularMovies} />
-      <MovieList title={"Top Rated Movies"} movies={topRatedMovies} />
-      <MovieList title={"Upcoming Movies"} movies={upcomingMovies} />
-      <MovieList title={"Now Playing"} movies={nowPlayingMovies} />
-      <MovieList title={"Popular"} movies={popularMovies} />
-      <MovieList title={"Top Rated Movies"} movies={topRatedMovies} />
-      <MovieList title={"Upcoming Movies"} movies={upcomingMovies} />
+    <div className="bg-black">
+      <div className=" text-white -mt-[18rem] relative z-20">
+        <MovieList title={"Now Playing"} movies={nowPlayingMovies} />
+        <MovieList title={"Popular"} movies={popularMovies} />
+        <MovieList title={"Top Rated Movies"} movies={topRatedMovies} />
+        <MovieList title={"Upcoming Movies"} movies={upcomingMovies} />
+        <MovieList title={"Now Playing"} movies={nowPlayingMovies} />
+        <MovieList title={"Popular"} movies={popularMovies} />
+        <MovieList title={"Top Rated Movies"} movies={topRatedMovies} />
+        <MovieList title={"Upcoming Movies"} movies={upcomingMovies} />
+        <MovieList title={"Now Playing"} movies={nowPlayingMovies} />
+        <MovieList title={"Popular"} movies={popularMovies} />
+        <MovieList title={"Top Rated Movies"} movies={topRatedMovies} />
+        <MovieList title={"Upcoming Movies"} movies={upcomingMovies} />
+      </div>
     </div>
   );
 };

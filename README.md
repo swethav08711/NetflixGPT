@@ -34,7 +34,10 @@
 - Build Movie card
 - TMDB Image cdn url
 - fetched other movies api
-
+- GPT search feature
+- Gpt search bar
+- Added multilingual support
+- Gpt Apis support(get open ai Key)
 # Features
 
 - Login / signup

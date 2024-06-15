@@ -16,4 +16,19 @@ export const API_CONSTANT = {
   },
 };
 
-export const IMD_URL_CDN =  "https://image.tmdb.org/t/p/w200/"
+export const IMD_URL_CDN = "https://image.tmdb.org/t/p/w200/";
+
+export const SUPPORETED_LANGUAGES = [
+  {
+    identifier: "en",
+    name: "English",
+  },
+  {
+    identifier: "hi",
+    name: "Hindi",
+  },
+  {
+    identifier: "spanish",
+    name: "Spanish",
+  },
+];

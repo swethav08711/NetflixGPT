@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { API_CONSTANT } from "../utils/constants";
-import { addTopRatedMovies, addUpcomingMovies } from "../utils/movieSlice";
+import { addUpcomingMovies } from "../utils/movieSlice";
 
 const useUpcomingMovies = () => {
   const dispatch = useDispatch();
@@ -11,7 +11,6 @@ const useUpcomingMovies = () => {
       API_CONSTANT
     );
     const data = await response.json();
-    console.log(data);
     dispatch(addUpcomingMovies(data.results));
   };
   useEffect(() => {
