@@ -38,6 +38,13 @@
 - Gpt search bar
 - Added multilingual support
 - Gpt Apis support(get gemini ai Key)
+- Gpt search API call
+- fetched gpt movies suggestion from TMDB
+- gpt slice added data 
+- used Movieslist component to make movie suggestion conatiner
+- adding .env file to gitignore
+- Meomoisation
+- make app responsive
 
 # Features
 
