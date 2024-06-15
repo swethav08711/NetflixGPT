@@ -79,3 +79,9 @@ MovieList
 - Trending
 - popular
   MovieCard\*n
+
+# deploying
+- firebase login
+- firebase init
+- npm run build
+- firebase deploy
