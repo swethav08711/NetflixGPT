@@ -85,3 +85,5 @@ MovieList
 - firebase init
 - npm run build
 - firebase deploy
+
+- npm ci && npm run build
