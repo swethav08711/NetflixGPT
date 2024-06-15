@@ -24,34 +24,22 @@
 - Get data from TMDB "now playing movies list" API
 
 # Features
+
 - Login / signup
-    - Signin / signup Form
-    - Redirect to Browse page
+  - Signin / signup Form
+  - Redirect to Browse page
 - Browse Page (after auth)
-    - Header
-    - Main movie
-        - trailer in bg
-        - Title and Description
-    - Movie suggestion
-        - movie list
+  - Header
+  - Main movie
+    - trailer in bg
+    - Title and Description
+  - Movie suggestion
+    - movie list
 - Netflix GPT
-    - search Bar
-    - movie suggestion
+  - search Bar
+  - movie suggestion
 
 # planing Browse page
-- Main container
-            - Video background
-            - Video title
-- Secondary Container
-        - MovieList * n
-         - cards
-          - Image
-          - Title
-          - Description
-          - Rating
-          - Genre
-          - Release Date
-          - Trailer
-          - Add to Watchlist
-          - Add to Favourites
-          - Add to Wishlist
+
+- Main container - Video background - Video title
+- Secondary Container - MovieList _ n - cards _ n
